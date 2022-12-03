@@ -7,7 +7,9 @@
     "day1": "nodemon --exec ts-node day1/day1.ts",
     "day1part2": "nodemon --exec ts-node day1/day1part2.ts",
     "day2part1": "nodemon --exec ts-node day2/day2part1.ts",
-    "day2part2": "nodemon --exec ts-node day2/day2part2.ts"
+    "day2part2": "nodemon --exec ts-node day2/day2part2.ts",
+    "day3part1": "nodemon --exec ts-node day3/day3part1.ts",
+    "day3part2": "nodemon --exec ts-node day3/day3part2.ts"
   },
   "author": "",
   "license": "ISC",
