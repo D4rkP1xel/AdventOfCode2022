@@ -87,6 +87,7 @@ async function app() {
        //console.log(sandBlocks)
     }
     console.log(sandBlocks.length)
+    return
     function moveSand(sandPos):number[]
     {
         const x = sandPos[0]
@@ -128,5 +129,11 @@ async function app() {
         return [x,y]
     }
 }
-
-app()
+async function start()
+{
+    const start = Date.now();
+    await app()
+    const end = Date.now()
+    console.log(`Execution time: ${end - start} ms`)
+}
+start()
