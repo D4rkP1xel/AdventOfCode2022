@@ -34,6 +34,8 @@
     "day14part2": "nodemon --exec ts-node day14/day14part2.ts",
     "day15part1": "nodemon --exec ts-node day15/day15part1.ts",
     "day15part2": "nodemon --exec ts-node day15/day15part2.ts",
+    "day16part1": "nodemon --exec ts-node day16/day16part1.ts",
+    "day16part2": "nodemon --exec ts-node day16/day16part2.ts",
     "test": "nodemon --exec ts-node day7/test.ts"
   },
   "author": "",
