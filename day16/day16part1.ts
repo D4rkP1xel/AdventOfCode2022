@@ -26,9 +26,26 @@ async function app() {
     console.log(tunnels)
     let currentValve = "AA"
     
-    function calculatePressure(minutes:number, pressure:number)
+    function calculatePressure( valve: tunnel, minutes:number, pressure:number, currentValves: tunnel[])
     {
+        minutes--
         
+        if(minutes === 0)
+        for(let i = 0; i<valve.tunnels.length; i++)
+        {
+            let canGo = true
+            for(let k=0; k<currentValves.length; k++)
+            {
+                if(currentValves[k].name === valve.tunnels[i]) //
+                {
+                    canGo = false
+                    break
+                }
+            }
+            if(canGo) continue
+            if(valve.tunnels[i])
+            calculatePressure(valve.tunnels[i], )
+        }
     }
 }
 
